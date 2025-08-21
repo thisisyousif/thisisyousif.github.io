@@ -247,7 +247,6 @@ footer i:hover{
         display: flex;
     }
     .whoarewe iframe{
-        width: 380px;
-        height: 380px;
+        max-width: 90vw;
     }
 }
