@@ -2,6 +2,9 @@
     --white:#fff;
     --gray:#c4c4c4;
     --dark-gray:#474b5e;
+    --dark:#252731;
+    --light-green:#3bd33b;
+    --green:#47b847;
 }
 *{
     margin: 0;
@@ -12,7 +15,7 @@ html{
     font-size: 16px;
 }
 body{
-    background-color: #8e9192;
+    background-color: var(--gray);
     font-family: sans-serif;
 }
 
@@ -26,7 +29,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     height: 12vh;
-    background-color: #47b847;
+    background-color: var(--green);
 }
 nav .logo{
    max-height: 100%;
@@ -42,14 +45,14 @@ nav .nav-items .nav-item{
 }
 .nav-item .nav-link{
     text-decoration: none;
-    color:#252731;
+    color:var(--dark);
 }
 .nav-item .nav-link:hover{
-    color:#faf5f5;
+    color:var(--white);
 
 }
 nav #mobile-menu{
-    color:#252731;
+    color:var(--dark);
     font-size: 2rem;
     display: none; 
     cursor: pointer;
@@ -58,24 +61,24 @@ nav #mobile-menu{
         font-family: inherit;
         padding: 0.5rem 1rem;
         border: none;
-        color:#fff;
+        color:var(--white);
         border-radius: 1rem;
         cursor: pointer;
         font-size: 1rem;
 }
 .cta.dark{
-    background-color: #252731;
+    background-color: var(--dark);
     transition: background-color 0.3s;
 }
 .cta.dark:hover{
-    background-color: #474b5e;
+    background-color:var(--dark-gray);
 }
 .cta.green{
-    background-color: #31af31;
+    background-color:var(--green);
     transition: background-color 0.3sec;
 }
 .cta.green:hover{
-    background-color: #3bd33b;
+    background-color:var(--light-green);
 }
 /* القسم الاساسي */
 .hero{
@@ -90,16 +93,14 @@ nav #mobile-menu{
     font-size: 3rem;
     width:40%;
     text-align: center;
-    color:#252731;
+    color:var(--dark);
     margin-bottom: 2rem;
 }
 .hero h1 span{
-    text-shadow: 0 0 10px #31af31;
+    text-shadow: 0 0 10px var(--green);
     font-style: italic;
 }
-.hero .cta.purple{
-    margin-left:1rem;
-}
+
 /* الميزات */
 
 .activities{
@@ -110,13 +111,13 @@ nav #mobile-menu{
     
 }
 .activities h3{
-    color:#252731;
+    color:var(--dark);
     font-size: 2rem;
     margin-bottom: 1rem;
-    text-shadow: 0 0 5px #31af31;
+    text-shadow: 0 0 5px var(--green);
 }
 .activities h6{
-    color:#252731;
+    color:var(--dark);
     font-size: 1rem;
     margin-bottom: 3rem;
     
@@ -126,7 +127,7 @@ nav #mobile-menu{
     display: flex;
     border-radius: 3rem;
     overflow: hidden;
-    box-shadow: 10px 10px 10px rgba(0, 0,0);
+    box-shadow: 10px 10px 10px var(--dark);
     margin: 2rem;
     height: 350px; 
     
@@ -151,7 +152,22 @@ nav #mobile-menu{
     max-width: 50%;
     
 }
-
+/* من نحن */
+.whoarewe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+.whoarewe h3{
+    background-color: var(--light-green);
+    margin-bottom: 1rem;
+}
+.whoarewe h4{
+    text-decoration: underline;
+    text-decoration-color: var(--green);
+    margin-bottom: 1rem;
+}
 
 /* التذييل */
 footer{
@@ -178,7 +194,7 @@ footer i{
     font-size: 1.5rem;
 }
 footer i:hover{
-    color: #3bd33b;
+    color: var(--light-green);
 }
 
 
@@ -216,7 +232,7 @@ footer i:hover{
         display: none;
         flex-direction: column;
         position: absolute;
-        background-color: #31af31;
+        background-color: var(--green);
         width:100%;
         height: 35%;
         top:12vh;
