@@ -11,3 +11,9 @@ navLinks.forEach((navl)=>{
         navItems.classList.toggle("active");
     })
 })
+const ctas=document.querySelectorAll(".cta");
+ctas.forEach((cta)=>{
+    cta.addEventListener('click',()=>{
+        window.alert("الموقع قيد الاستكمال");
+    })
+})

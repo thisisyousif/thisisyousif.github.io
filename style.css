@@ -36,6 +36,9 @@ nav .logo{
    border-radius: 50%;
    
 }
+nav .logo:hover{
+    border-radius:0%;
+}
 nav .nav-items{
     list-style-type: none;
     display: flex;
